@@ -3,7 +3,7 @@ import Price from "./Price";
 
 const MarketAnalysis = () => {
   return (
-    <div className=" text-white min-h-screen flex flex-col sm:flex-row items-center p-4">
+    <div className=" text-white  flex flex-col sm:flex-row items-center p-4">
       {/* Market Analysis Section */}
       <div className="w-full max-w-md   px-2">
         <h2 className="text-lg font-semibold text-white mb-4">
@@ -15,7 +15,7 @@ const MarketAnalysis = () => {
         <h3 className="text-lg font-semibold text-[#fff] mb-4">
           Analyzing: BTC
         </h3>
-      <div className="fram2 border border-[#D64FEB] rounded-xl">
+      <div className="fram2 border border-[#D64FEB] h-full rounded-xl">
       <div className="rounded-md px-4 pt-4 mb-4">
           <h4 className="text-md font-semibold text-[#fff] mb-4">
             Technical Analysis: BTC

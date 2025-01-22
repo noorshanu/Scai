@@ -1,13 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
-
-
 
 
 
@@ -25,12 +20,15 @@ body {
   background-position: center;
 }
 .fram1{
-  background-image: url('images/fram1.png');
+
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+  background-color: #2124567c;
 }
 .fram2{
   background-image: url('images/fram2.png');
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }  

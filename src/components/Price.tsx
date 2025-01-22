@@ -85,19 +85,19 @@ function Price() {
 
   return (
     <div
-      className={`flex flex-row gap-4 items-center justify-center fram1 border border-[#37408B] rounded-xl px-6 pt-2 pb-6 mb-4 transition-opacity duration-500 ${
+      className={`flex flex-row gap-4 items-center justify-between fram1 h-auto sm:h-[200px] border border-[#37408B] rounded-xl px-6 pt-2 pb-6 mb-4 transition-opacity duration-500 ${
         animation ? "opacity-0" : "opacity-100"
       }`}
     >
       <div className="text-center">
-        <p className="text-xl sm:text-2xl font-light text-green-400">
+        <p className="text-xl sm:text-4xl font-light text-green-400">
           ${cryptoData.price.toLocaleString()}
         </p>
         <p className=" text-xs sm:text-sm text-gray-200">{currentCrypto.toUpperCase()}/USD</p>
       </div>
       <div className="text-center">
         <p
-          className={`text-xl sm:text-2xl font-light ${
+          className={`text-xl sm:text-4xl font-light ${
             cryptoData.change >= 0 ? "text-green-400" : "text-red-400"
           }`}
         >
@@ -106,7 +106,7 @@ function Price() {
         <p className=" text-xs sm:text-sm text-gray-200">24h </p>
       </div>
       <div className="text-center">
-        <p className="text-xl sm:text-2xl font-light text-green-400">
+        <p className="text-xl sm:text-4xl font-light text-green-400">
           {cryptoData.signal.toFixed(0)}%
         </p>
         <p className=" text-xs sm:text-sm text-gray-200">Signal </p>
