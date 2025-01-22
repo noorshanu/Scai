@@ -135,7 +135,7 @@ function ChatScreen() {
   }, [messages]);
 
   return (
-    <div className="relative">
+    <div className="relative w-full mx-auto">
       {messages.map((message, index) => {
         // Add textResets[index] as a dependency to trigger re-render
         const animatedText = useTypingEffect(message.text, 50, visibility[index] ? 0 : message.delay);
@@ -165,7 +165,7 @@ function ChatScreen() {
           </div>
         );
       })}
-      <img src="images/chat.png" alt="" className="w-full h-auto" />
+      <img src="images/chat.png" alt="" className="w-auto h-[880px] mx-auto" />
     </div>
   );
 }
