@@ -7,6 +7,9 @@ function Price() {
     btc: { price: 0, change: 0, signal: 0 },
     eth: { price: 0, change: 0, signal: 0 },
     bnb: { price: 0, change: 0, signal: 0 },
+    doge: { price: 0, change: 0, signal: 0 },
+    xrp: { price: 0, change: 0, signal: 0 },
+    sol: { price: 0, change: 0, signal: 0 },
   });
 
   const [animation, setAnimation] = useState(false);
@@ -15,7 +18,7 @@ function Price() {
     const fetchPrices = async () => {
       try {
         const response = await axios.get(
-          "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,binancecoin&vs_currencies=usd&include_24hr_change=true"
+          "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,binancecoin,dogecoin,ripple,solana&vs_currencies=usd&include_24hr_change=true"
         );
 
         setPrices({
@@ -34,6 +37,21 @@ function Price() {
             change: response.data.binancecoin.usd_24h_change.toFixed(2),
             signal: Math.random() * 100,
           },
+          doge: {
+            price: response.data.dogecoin.usd,
+            change: response.data.dogecoin.usd_24h_change.toFixed(2),
+            signal: Math.random() * 100,
+          },
+          xrp: {
+            price: response.data.ripple.usd,
+            change: response.data.ripple.usd_24h_change.toFixed(2),
+            signal: Math.random() * 100,
+          },
+          sol: {
+            price: response.data.solana.usd,
+            change: response.data.solana.usd_24h_change.toFixed(2),
+            signal: Math.random() * 100,
+          },
         });
       } catch (error) {
         console.error("Error fetching prices:", error);
@@ -48,7 +66,7 @@ function Price() {
   }, []);
 
   useEffect(() => {
-    const cryptos = ["btc", "eth", "bnb"];
+    const cryptos = ["btc", "eth", "bnb", "doge", "xrp", "sol"];
     let index = 0;
 
     const interval = setInterval(() => {

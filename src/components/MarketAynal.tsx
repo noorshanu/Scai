@@ -33,7 +33,7 @@ const MarketAnalysis = () => {
         </div>
 
         {/* Other Analysis Section */}
-        <div className="  p-4   ">
+        {/* <div className="  p-4   ">
           <h4 className="text-lg font-semibold text-white mb-2">
             Other Analysis: BTC
           </h4>
@@ -56,7 +56,7 @@ const MarketAnalysis = () => {
       
         
           </ul>
-        </div>
+        </div> */}
       </div>
       </div>
     </div>
