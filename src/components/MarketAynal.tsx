@@ -32,7 +32,7 @@ const MarketAnalysis = () => {
           <img 
             src="images/pol.png" 
             alt="" 
-            className="w-auto h-auto max-w-full absolute top-[36%] left-[20%] animate-slide-left" 
+            className="w-auto h-auto max-w-full absolute top-[36%] left-[20%] animate-slide-left-once" 
           />
           </div>
         </div>

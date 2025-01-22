@@ -10,6 +10,19 @@
   }
 }
 
+@keyframes slideLeftOnce {
+  0% {
+    left: 20%;
+  }
+  100% {
+    left: 60%;
+  }
+}
+
 .animate-slide-left {
   animation: slideLeft 5s infinite ease-in-out;
+}
+
+.animate-slide-left-once {
+  animation: slideLeftOnce 2s forwards ease-out;
 } 
