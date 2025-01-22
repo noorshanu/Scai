@@ -165,7 +165,9 @@ function ChatScreen() {
           </div>
         );
       })}
-      <img src="images/chat.png" alt="" className="w-auto h-[880px] mx-auto" />
+     <div className=" flex justify-center items-center">
+     <img src="images/chat.png" alt="" className="w-full  mx-auto" />
+     </div>
     </div>
   );
 }
