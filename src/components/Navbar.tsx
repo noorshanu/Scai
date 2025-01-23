@@ -1,5 +1,5 @@
 import React from "react";
-import { FaDiscord, FaTelegram } from "react-icons/fa6";
+import {  FaTelegram } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 
 function Navbar() {
